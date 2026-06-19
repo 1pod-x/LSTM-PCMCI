@@ -34,9 +34,6 @@ Causal Precursors Data Flow & Logic Analysis：
 | **4. Temporal Grouping** | `group_causal_prescursors()` | `link_matrix` & `impact_matrix` | 1. Groups active drivers per lag `tau`.<br>2. Clears self-autoregressive links (`i != target_idx`). | `self.causal_link_groups`<br>Format: Dict `{ "lag_str": [driver_id, ...] }` | Pinpoints exactly which external metrics trigger causal effects at distinct historical lags. |
 | **5. Tree Structuring** | `get_group_trees()` | Grouped causal driver dictionary | Builds a 2-level causal topology tree for each lag:<br>• Level 1: Target Variable<br>• Level 2: Causal Drivers | 4 structured topology dicts:<br>• `group_nodes`<br>• `group_num_chid_nodes`<br>• `group_input_idx`<br>• `group_child_state_idx` | Transforms matrix outputs into **topology configurations** to feed **Causal LSTM (CLSTM)** networks. |
 
-Result:
-<img src="Unknown.png" width="400">
-
 # CLSTM Implementation
 Component Breakdown:
 1. `NodeCell`
