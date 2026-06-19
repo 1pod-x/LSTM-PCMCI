@@ -1,8 +1,7 @@
 # Data Source
 | Platform | Method | Category |Pairs| 
 | ------------- | ------------- |------------- |------------- |
-| Binance  | WebSocketAPI  | Tick to tick orderbook | BTCUSDT, ETHUSDT, ADAUSDT, LTCUSDT, SOLUSDT, DOGEUSDT,
-WBTCUSDT, WETHUSDT|
+| Binance  | WebSocketAPI  | Tick to tick orderbook | BTCUSDT, ETHUSDT, ADAUSDT, LTCUSDT, SOLUSDT, DOGEUSDT,WBTCUSDT, WETHUSDT|
 
 | Parameter | Sample Data |
 | ------------- | ------------- |
